@@ -210,15 +210,14 @@
 .company-text strong {
   font-weight: 800;
   font-size: 4rem;
-  font-size: clamp(2rem, 2.817vw, 4rem);
+  font-size: clamp(2rem, 1.822vw, 3.5rem);
 
   color: #000;
 }
 
 .company-text p {
   font-weight: 300;
-  font-size: 2.4rem;
-  font-size: clamp(1.4rem, 1.6901vw, 2.4rem);
+  font-size: clamp(1.4rem, 1.0416vw, 2rem);
 
   color: var(--Darck-60);
   margin-top: 0.7rem;
@@ -273,6 +272,7 @@
 .event-list li figure {
   width: 36.5rem;
   height: 36.5rem;
+  position: relative;
 
   border: 0.5px solid rgba(0, 0, 0, 0.2);
 }
@@ -304,6 +304,23 @@
   color: var(--Darck-60);
   font-size: clamp(1.3rem, 1.042vw, 2rem);
   font-weight: 400;
+}
+
+.event-list > li figure::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgb(0, 0, 0);
+  pointer-events: none;
+  opacity: 0;
+  transition: 0.4s;
+}
+
+.event-list > li:hover figure::after {
+  opacity: 0.3;
 }
 /* e.event */
 

@@ -33,7 +33,7 @@
   align-items: center;
   text-align: center;
   flex-direction: column;
-  top: 50%;
+  top: 75%;
   left: 50%;
   transform: translate(-50%, -50%);
   /* background: #5f5; */
@@ -56,13 +56,13 @@
 
 .visual-btn {
   display: block;
-  font-size: clamp(1.4rem, 1.6901vw, 2.4rem);
+  font-size: clamp(1.5rem, 1.6901vw, 2.4rem);
   margin-top: 3rem;
 
-  padding: 2rem 3rem;
+  padding: 1rem 3rem;
   border: 2px solid var(--Light-100);
   color: var(--Light-100);
-  font-weight: 700;
+  font-weight: 600;
 
   transition: 0.4s;
 }

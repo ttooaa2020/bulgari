@@ -2,7 +2,7 @@
 /* s.more */
 .more {
   background: var(--main-color2);
-  height: 46.7rem;
+  padding: 8rem 0;
   margin: 0;
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
 }
@@ -15,13 +15,12 @@
 }
 
 .more-title h4 {
-  padding-top: 11.5rem;
   font-weight: 700;
   font-size: 4rem;
   color: var(--Darck-100);
   padding-bottom: 4rem;
 
-  font-size: clamp(2.5rem, 2.0833vw, 3rem);
+  font-size: clamp(2rem, 2.0833vw, 3rem);
 }
 
 .c-more-btn {
@@ -30,10 +29,7 @@
   align-items: center;
   justify-content: center;
 
-  width: 20rem;
-  padding: 2rem 2rem;
-  border-radius: 10rem;
-
+  padding: 2rem;
   font-weight: 700;
   font-size: 2.5rem;
   color: var(--Light-100);

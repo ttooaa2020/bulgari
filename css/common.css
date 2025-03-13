@@ -287,7 +287,7 @@ header.scrolled .mobile-more-btn {
   padding-top: 1.5%;
   align-items: flex-start;
   justify-content: space-between;
-  color: var(--Darck-100);
+  color: var(--Darck-60);
 }
 
 address {
@@ -415,27 +415,13 @@ address {
 
 @media screen and (max-width: 1024px) {
   .logo a {
-    width: 17rem;
+    width: 15rem;
   }
 }
 
 @media (max-width: 920px) {
   .gnb li {
     padding: 0 2rem;
-  }
-}
-
-@media (max-width: 890px) {
-  .visual {
-    height: 57.6rem;
-  }
-
-  .visual figure img {
-    height: 57.6rem;
-  }
-
-  .visual-text {
-    gap: 0.9rem;
   }
 }
 

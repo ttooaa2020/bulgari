@@ -31,10 +31,9 @@
 }
 
 .visual-text p {
-  font-size: 3rem;
   font-weight: 400;
 
-  font-size: clamp(1.4rem, 1.0416vw, 2rem);
+  font-size: clamp(1.4rem, 1.302vw, 2.5rem);
 }
 
 .visual figure img {
