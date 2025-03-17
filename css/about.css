@@ -1,7 +1,7 @@
 @charset "utf-8";
 /* s.more */
 .more {
-  background: var(--main-color2);
+  background: var(--second-color);
   padding: 8rem 0;
   margin: 0;
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
@@ -16,41 +16,14 @@
 
 .more-title h4 {
   font-weight: 700;
-  font-size: 4rem;
-  color: var(--Darck-100);
-  padding-bottom: 4rem;
+  color: var(--darck-100);
 
-  font-size: clamp(2rem, 2.0833vw, 3rem);
+  font-size: var(--fz-xl);
 }
 
-.c-more-btn {
-  display: flex;
-  text-align: center;
-  align-items: center;
-  justify-content: center;
-
-  padding: 2rem;
-  font-weight: 700;
-  font-size: 2.5rem;
-  color: var(--Light-100);
-  background: var(--btn);
-
-  font-size: clamp(1.6rem, 1.302vw, 2rem);
-
-  transition: 0.4s;
-}
-
-.c-more-btn:hover {
-  color: var(--Light-100);
-  background: var(--main-color);
-}
 /* e.more */
 
 /* about */
-.about-text {
-  flex: 1 1 max(40%, 300px);
-  /* border: 1px solid #000; */
-}
 
 .about-con {
   display: flex;
@@ -68,34 +41,36 @@
   gap: 5%;
 }
 
+.about-con li .about-text {
+  flex: 1 1 max(40%, 300px);
+  /* border: 1px solid #000; */
+}
+
 .about-con li:nth-child(even) {
   flex-direction: row-reverse;
 }
 
-.about-con dl dt {
-  font-size: 4rem;
-  font-weight: 700;
+.about-con li dl dt {
+  font-weight: 800;
 
-  font-size: clamp(2.2rem, 2.0833vw, 4rem);
+  font-size: var(--fz-xl);
 }
 
-.about-con dl dd {
-  padding-top: 2rem;
-  font-size: 2.4rem;
+.about-con li dl dd {
   font-weight: 400;
-  color: var(--Darck-60);
+  color: var(--darck-60);
+  padding-top: 1%;
 
-  padding-top: 2.9542%;
-  font-size: clamp(1.5rem, 1.25vw, 2.4rem);
+  font-size: var(--fz-m);
 }
 
-.about-con figure {
+.about-con li figure {
   height: 47rem;
 
   flex: 1 1 max(40%, 300px);
 }
 
-.about-con figure img {
+.about-con li figure img {
   width: 100%;
   height: 100%;
 
@@ -110,7 +85,7 @@
     gap: 5rem;
   }
 
-  .about-con figure {
+  .about-con li figure {
     height: 28rem;
   }
 }

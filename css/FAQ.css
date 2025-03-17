@@ -15,12 +15,11 @@
   justify-content: center;
 
   background: transparent;
-  color: var(--Darck-60);
-  font-size: 2rem;
+  color: var(--darck-60);
   font-weight: 600;
   cursor: pointer;
 
-  font-size: clamp(1.5rem, 1.0416vw, 2rem);
+  font-size: var(--fz-m);
 }
 
 .lend-tabmenu button:hover {
@@ -30,7 +29,7 @@
 
 .lend-tabmenu button.on {
   transition: 0.4s;
-  color: var(--Darck-100);
+  color: var(--darck-100);
   border-bottom: 4px solid #000;
 }
 /* 버튼들 */
@@ -41,7 +40,7 @@
   display: flex;
   flex-direction: column;
 
-  margin-top: 2.6316%;
+  margin-top: var(--m-m);
 }
 
 .question-list li {
@@ -55,18 +54,17 @@
   border-top: 1px solid #000;
 }
 
-.question-list strong {
+.question-list li strong {
   display: flex;
   align-items: center;
   justify-content: space-between;
 
-  font-size: 2.5rem;
   font-weight: 700;
 
-  font-size: clamp(1.5rem, 1.302vw, 2.5rem);
+  font-size: var(--fz-l);
 }
 
-.question-list strong::after {
+.question-list li strong::after {
   content: "";
   display: flex;
   width: 1.5rem;
@@ -77,19 +75,18 @@
   width: 3.0172%;
 }
 
-.answer-wrap {
+.question-list li .answer-wrap {
   display: none;
 
-  font-size: 2rem;
   font-weight: 400;
-  color: var(--Darck-60);
+  color: var(--darck-60);
 
   padding-top: 0.8%;
 
-  font-size: clamp(1.2rem, 1.0416vw, 2rem);
+  font-size: var(--fz-s);
 }
 
-.answer-wrap p {
+.question-list li .answer-wrap p {
   padding-top: 1.5%;
 }
 

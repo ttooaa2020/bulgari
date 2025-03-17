@@ -6,7 +6,7 @@ $(function () {
 
   const duration = 300;
 
-  // 헤더, 탑버튼이 비주얼을 벗어 나갈때----------------------------------------------------------
+  // 헤더, 탑버튼이 비주얼을 벗어 나갈때------------------------------------------------------------
   $window.on("scroll", function () {
     const visualBottom = $visual.offset().top + $visual.outerHeight() - 500;
     const scrollTop = $window.scrollTop();

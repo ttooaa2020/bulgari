@@ -2,27 +2,41 @@
 @import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css");
 
 :root {
-  --Darck-100: #000;
-  --Darck-60: #666666;
-  --Light-100: #fff;
-  --btn: #b4b4b4;
-  --border: #bababa;
+  --darck-100: #000;
+  --darck-60: #666666;
+  --light-100: #fff;
+  --btn-color: #b4b4b4;
 
-  --main-color: #00714f;
-  --main-color2: #f3f2f3;
+  --first-color: #00714f;
+  --second-color: #f3f2f3;
+
+  --fz-3xl: clamp(2.5rem, 2.6vw, 5rem);
+  --fz-xxl: clamp(3rem, 2vw, 4rem);
+  --fz-xl: clamp(2rem, 1.5vw, 3rem);
+  --fz-l: clamp(1.5rem, 1.3vw, 2.5rem);
+  --fz-m: clamp(1.3rem, 1vw, 2rem);
+  --fz-s: clamp(1rem, 0.9vw, 1.8rem);
+
+  --m-l: 2.6%;
+  --m-m: 3rem;
+  --m-s: 2rem;
+
+  /* --extrabold: 800;
+  --bold: 700;
+  --smallbold: 600;
+  --medium: 500;
+  --regular: 400; */
 }
 
 ::selection {
-  background: var(--main-color);
-  color: var(--Light-100);
+  background: var(--first-color);
+  color: var(--light-100);
 }
 
 h3 {
-  font-size: 4rem;
   font-weight: 800;
-  color: var(--Darck-100);
+  color: var(--darck-100);
   text-align: center;
-
   font-size: clamp(2.5rem, 1.822vw, 3.5rem);
 }
 
@@ -39,13 +53,13 @@ html {
 
 body {
   font: 2rem/1.5 Pretendard, sans-serif;
-  color: var(--Darck-100);
+  color: var(--darck-100);
   text-transform: capitalize;
   word-break: keep-all;
   overflow-x: hidden;
 
   min-width: 36rem;
-  background: var(--Light-100);
+  background: var(--light-100);
 }
 
 a {
@@ -55,7 +69,7 @@ a {
 
 a:hover {
   text-decoration: none;
-  color: var(--main-color);
+  color: var(--first-color);
   font-weight: 700;
 }
 
@@ -103,7 +117,7 @@ header nav {
 }
 
 header.scrolled {
-  background-color: var(--Light-100);
+  background-color: var(--light-100);
 }
 
 header.scrolled .logo a {
@@ -111,7 +125,7 @@ header.scrolled .logo a {
 }
 
 header.scrolled .nav-con {
-  color: var(--Darck-100);
+  color: var(--darck-100);
 }
 
 header.scrolled .join-btn a:nth-child(1) {
@@ -121,13 +135,16 @@ header.scrolled .join-btn a:nth-child(1) {
 header.scrolled .join-btn a:nth-child(2) {
   background: url(../img/join-darck.svg) no-repeat 50% / contain;
 }
+header.scrolled .mobile-more-btn {
+  background: url(../img/more-icon-darck.svg) no-repeat 50% / contain;
+}
 
 header.scrolled .language-list li a {
   display: block;
   padding: 2rem;
   text-align: center;
 
-  font-weight: 500;
+  font-weight: 600;
 
   padding: 14.5985%;
 }
@@ -147,7 +164,18 @@ header.hide {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  color: var(--Light-100);
+  color: var(--light-100);
+}
+
+.gnb {
+  display: flex;
+}
+
+.gnb li {
+  padding: 0 3.1rem;
+  font-weight: 600;
+
+  font-size: var(--fz-m);
 }
 
 .nav-btn {
@@ -157,19 +185,6 @@ header.hide {
 
   gap: 6.5789%;
 }
-
-.gnb {
-  display: flex;
-}
-
-.gnb li {
-  padding: 0 3.1rem;
-  font-size: 2rem;
-  font-weight: 600;
-
-  font-size: clamp(1.6rem, 1.042vw, 2rem);
-}
-
 .join-btn {
   display: flex;
   align-items: center;
@@ -197,10 +212,6 @@ header.hide {
   background: url(../img/more-icon.svg) no-repeat 50% / contain;
 }
 
-header.scrolled .mobile-more-btn {
-  background: url(../img/more-icon-darck.svg) no-repeat 50% / contain;
-}
-
 /* header end */
 
 /* 모바일 메뉴 */
@@ -214,8 +225,8 @@ header.scrolled .mobile-more-btn {
   right: -100%;
   width: 70%;
   height: 100vh;
-  background: var(--main-color);
-  color: var(--Light-100);
+  background: var(--first-color);
+  color: var(--light-100);
   transition: 0.4s;
 
   display: flex;
@@ -237,26 +248,26 @@ header.scrolled .mobile-more-btn {
 }
 
 .mobile-gnb {
-  margin-top: 15rem;
+  margin-top: 10rem;
 }
 
 .mobile-gnb li a {
   font-weight: 600;
-  font-size: 2.2rem;
+  font-size: var(--fz-xl);
   display: block;
   padding: 2.5rem 0;
   text-align: center;
 }
 
 .mobile-gnb li a:hover {
-  color: var(--Darck-100);
+  color: var(--darck-100);
 }
 
 /* 모바일 메뉴 end */
 
 /* s. footer */
 #footer {
-  background: var(--main-color2);
+  background: var(--second-color);
 
   padding: 5% 0;
 }
@@ -270,15 +281,14 @@ header.scrolled .mobile-more-btn {
 
 .foot-nav li {
   font-weight: 700;
-  font-size: 2rem;
-  font-size: clamp(1.2rem, 1.4084vw, 2rem);
+  font-size: var(--fz-m);
   flex-shrink: 0;
 }
 
 .foot-nav li a {
   display: block;
   padding: 1rem 2rem;
-  color: var(--Darck-100);
+  color: var(--darck-100);
 }
 
 .footer-con {
@@ -287,13 +297,12 @@ header.scrolled .mobile-more-btn {
   padding-top: 1.5%;
   align-items: flex-start;
   justify-content: space-between;
-  color: var(--Darck-60);
+  color: var(--darck-60);
 }
 
 address {
   font-weight: 500;
-  font-size: 1.8rem;
-  font-size: clamp(1rem, 1.2676vw, 1.8rem);
+  font-size: var(--fz-s);
 }
 
 .in {
@@ -372,18 +381,49 @@ address {
   bottom: 11.5%;
   right: 3.9063%;
 }
-/* e. footer */
 
 .top {
   display: block;
   width: 7.4rem;
   height: 7.4rem;
   border-radius: 100%;
-  background: var(--Darck-100)
+  background: var(--darck-100)
     url(https://www.handsome.co.kr/resources/pc/ext/images/ico-button-tooltop.png)
     no-repeat center/40%;
   /* 
   border: 0.5px solid #ffffff; */
+}
+
+.more-btn {
+  width: 24rem;
+  height: 7.2rem;
+  background: var(--btn-color);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.7rem;
+  margin-top: var(--m-m);
+
+  font-weight: 700;
+  font-size: var(--fz-m);
+  color: #fff;
+
+  transition: 0.4s;
+}
+
+.more-btn:hover {
+  background: var(--first-color);
+  color: #fff;
+}
+
+.event-list li figure {
+  overflow: hidden;
+}
+
+.event-list li :hover img {
+  transition: transform 0.5s ease;
+  transform: scale(1.1);
 }
 
 /* 반응형00000000000000000000000000000000000000000000000000000000000000000000000000 */
@@ -417,15 +457,7 @@ address {
   .logo a {
     width: 15rem;
   }
-}
 
-@media (max-width: 920px) {
-  .gnb li {
-    padding: 0 2rem;
-  }
-}
-
-@media (max-width: 780px) {
   .gnb li {
     display: none;
   }
@@ -472,14 +504,23 @@ address {
     width: 5rem;
     height: 5rem;
   }
+
+  .more-btn {
+    background: var(--first-color);
+  }
 }
 
-@media (max-width: 430px) {
+@media (max-width: 500px) {
   .inner {
     width: 90%;
   }
 
   .join-btn {
     display: none;
+  }
+
+  .more-btn {
+    width: 17.5rem;
+    height: 5.1rem;
   }
 }

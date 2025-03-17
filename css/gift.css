@@ -1,112 +1,6 @@
 @charset "utf-8";
 
-.main-visual {
-  position: relative;
-  width: 100%;
-  height: 80rem;
-  overflow: hidden;
-  animation: visual 0.7s ease-out forwards;
-}
-
-.main-visual figure {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  pointer-events: none;
-}
-
-.main-visual figure img {
-  width: 100%;
-  height: 100%;
-}
-
-.visual-con {
-  position: absolute;
-
-  display: flex;
-  align-items: center;
-  text-align: center;
-  flex-direction: column;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  /* background: #5f5; */
-  z-index: 1;
-}
-
-.visual-con h2 {
-  font-weight: 700;
-  color: var(--Light-100);
-
-  font-size: clamp(2.5rem, 2.6041vw, 5rem);
-}
-
-.visual-con p {
-  color: var(--Light-100);
-  font-weight: 400;
-
-  font-size: clamp(1.3rem, 1.0416vw, 2rem);
-}
-
-.visual-btn {
-  display: block;
-  font-size: clamp(1.4rem, 1.6901vw, 2.4rem);
-  margin-top: 3rem;
-
-  padding: 2rem 3rem;
-  border: 2px solid var(--Light-100);
-  color: var(--Light-100);
-  font-weight: 700;
-  border-radius: 30rem;
-
-  transition: 0.4s;
-}
-
-.visual-btn:hover {
-  background: var(--main-color);
-  border: 2px solid var(--main-color);
-  color: var(--Light-100);
-}
-
-/* all 메뉴 */
-
 /* menu-all-list */
-/* 버튼들 */
-.lend-tabmenu {
-  display: flex;
-  justify-content: center;
-}
-
-.lend-tabmenu button {
-  width: 20rem;
-  height: 7rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  background: var(--main-color2);
-  color: var(--Darck-60);
-  border: 5px solid var(--main-color2);
-  font-weight: 500;
-  cursor: pointer;
-  transition: 0.4s;
-
-  width: 15.7237%;
-  font-size: clamp(1.8rem, 1.302vw, 2.5rem);
-}
-
-.lend-tabmenu button:hover {
-  background: var(--main-color);
-  color: var(--Darck-100);
-}
-
-.lend-tabmenu button.on {
-  background: var(--Light-100);
-  color: var(--Darck-100);
-  font-weight: 700;
-}
 
 .menu-all-list {
   display: grid;
@@ -127,63 +21,48 @@
   transition: 0.4s;
 }
 
-.menu-all-list figure {
+.menu-all-list li a figure {
   width: 100%;
 }
 
-.menu-all-list img {
+.menu-all-list li a figure img {
   width: 100%;
   height: 100%;
 }
 
-.menu-all-list dl {
+.menu-all-list li a dl {
   margin: 1.5rem 0;
 }
 
-.menu-all-list dt {
+.menu-all-list li a dt {
   font-weight: 700;
-  font-size: 2rem;
 
-  font-size: clamp(1.5rem, 1.0416vw, 2rem);
-  color: var(--Darck-100);
+  font-size: var(--fz-l);
+  color: var(--darck-100);
 }
 
-.menu-all-list dd {
+.menu-all-list li a dd {
   font-weight: 400;
-  font-size: 1.5rem;
-  font-size: clamp(1rem, 0.78125vw, 1.5rem);
-  color: var(--Darck-60);
+  font-size: var(--fz-s);
+  color: var(--darck-60);
 }
 
 .menu-all-list li:hover {
-  background: var(--main-color);
+  background: var(--first-color);
 }
 
 .menu-all-list li:hover dt,
 .menu-all-list li:hover dd,
 .menu-all-list li:hover strong {
-  color: var(--Light-100);
+  color: var(--light-100);
 }
 
-.menu-all-list div {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.menu-all-list strong {
-  font-weight: 600;
-
-  font-size: clamp(1.4rem, 1.0416vw, 2rem);
+.menu-all-list li a strong {
+  font-weight: 700;
+  font-size: var(--fz-s);
 }
 
 /* s.commpany */
-.company-all {
-  display: flex;
-  flex-direction: column;
-  gap: 10rem;
-  gap: 5.2083%;
-}
 
 .company .brand-story {
   display: flex;
@@ -191,59 +70,35 @@
   justify-content: space-between;
 }
 
-.content {
-  width: 58.6rem;
-  width: 41.2676%;
-}
-
-.company figure {
+.company .brand-story figure {
   width: 59.7rem;
   height: 65.9rem;
   aspect-ratio: 1/1.1039;
 }
 
-.company figure img {
+.company .brand-story figure img {
   width: 100%;
   height: 100%;
 }
 
-.company-text strong {
+.company .brand-story .content {
+  width: 58.6rem;
+  width: 41.2676%;
+}
+
+.company .brand-story .content .company-text strong {
   font-weight: 800;
-  font-size: 4rem;
-  font-size: clamp(2rem, 1.822vw, 3.5rem);
+  font-size: var(--fz-xl);
 
   color: #000;
 }
 
-.company-text p {
-  font-weight: 300;
-  font-size: clamp(1.4rem, 1.0416vw, 2rem);
+.company .brand-story .content .company-text p {
+  font-weight: 400;
+  font-size: var(--fz-m);
 
-  color: var(--Darck-60);
-  margin-top: 0.7rem;
-}
-
-.more-btn {
-  width: 24rem;
-  height: 7.2rem;
-  background: var(--btn);
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 0.7rem;
-  margin-top: 3.6rem;
-
-  font-weight: 700;
-  font-size: clamp(1.4rem, 1.0416vw, 2rem);
-  color: #fff;
-
-  transition: 0.4s;
-}
-
-.more-btn:hover {
-  background: var(--main-color);
-  color: #fff;
+  color: var(--darck-60);
+  padding-top: 1%;
 }
 
 .company-all .brand-story:nth-child(odd) {
@@ -266,10 +121,9 @@
   display: flex;
   align-items: center;
   flex-direction: column;
-  gap: 2rem;
 }
 
-.event-list li figure {
+.event-list li a figure {
   width: 36.5rem;
   height: 36.5rem;
   position: relative;
@@ -277,7 +131,7 @@
   border: 0.5px solid rgba(0, 0, 0, 0.2);
 }
 
-.event-list li img {
+.event-list li a figure img {
   width: 100%;
   height: 100%;
 }
@@ -286,55 +140,35 @@
   text-align: center;
 }
 
-.event-list strong {
-  font-size: clamp(1.6rem, 1.042vw, 2rem);
-  font-weight: 800;
-}
-
-.event-text {
+.event-list li a .event-text {
   padding-top: 2%;
 }
 
-.event-text dt {
-  font-size: clamp(1.6rem, 1.6901vw, 2.4rem);
-  font-weight: 700;
+.event-list li a .event-text dt {
+  font-size: var(--fz-l);
+  font-weight: 800;
+  color: var(--darck-100);
 }
 
-.event-text dd {
-  color: var(--Darck-60);
-  font-size: clamp(1.3rem, 1.042vw, 2rem);
+.event-list li a .event-text dd {
+  font-size: var(--fz-m);
   font-weight: 400;
+  color: var(--darck-60);
 }
 
-.event-list > li figure::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: rgb(0, 0, 0);
-  pointer-events: none;
-  opacity: 0;
-  transition: 0.4s;
-}
-
-.event-list > li:hover figure::after {
-  opacity: 0.3;
-}
 /* e.event */
 
 /* 반응형  000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000*/
 
 @media screen and (max-width: 1900px) {
-  .event-list li figure {
+  .event-list li a figure {
     width: 30rem;
     height: 30rem;
   }
 }
 
 @media screen and (max-width: 1620px) {
-  .event-list li figure {
+  .event-list li a figure {
     width: 20rem;
     height: 20rem;
   }
@@ -351,23 +185,18 @@
   }
 
   /* company */
-  .content {
+  .company .brand-story .content {
     width: 44.2rem;
     width: 47.8355%;
   }
 
-  .brand-story .more-btn {
+  .company .brand-story .content .more-btn {
     width: 18.4rem;
     width: 41.8182%;
     height: 6.3rem;
   }
 
-  .brand-story .more-btn::after {
-    width: 2.6rem;
-    height: 2.6rem;
-  }
-
-  .company figure {
+  .company .brand-story figure {
     width: 38.8rem;
     width: 41.9913%;
   }
@@ -388,7 +217,7 @@
     padding: 1.5rem 2.2rem;
   }
 
-  .menu-all-list dl {
+  .menu-all-list li a dl {
     padding-top: 0.2rem;
   }
 
@@ -396,15 +225,16 @@
 
   .event-list li {
     flex: 1 1 40%;
+    margin-bottom: var(--m-s);
   }
 
-  .event-list li figure {
+  .event-list li a figure {
     width: 30rem;
     height: 30rem;
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
   /* all */
 
   .menu-all-list {
@@ -418,14 +248,12 @@
   .company .brand-story {
     display: flex;
 
-    flex-direction: column !important;
+    flex-direction: column;
     align-items: center;
     position: relative;
   }
 
-  .brand-story .more-btn {
-    width: 17.5rem;
-    height: 5.1rem;
+  .company .brand-story .content .more-btn {
     position: absolute;
     top: 75%;
     left: 50%;
@@ -435,23 +263,23 @@
     z-index: 1;
   }
 
-  .company-text {
+  .company .brand-story .content .company-text {
     padding: 0.5rem 0 0.5rem;
   }
 
-  .content {
+  .company .brand-story .content {
     width: 100%;
     text-align: center;
     margin-top: 0;
   }
 
-  .company figure {
+  .company .brand-story figure {
     width: 100%;
     height: 22.8rem;
     margin-top: 1rem;
   }
 
-  .brand-story figure img {
+  .company .brand-story figure img {
     width: 100%;
     height: 100%;
     filter: brightness(0.4);
@@ -469,7 +297,7 @@
   }
 }
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 500px) {
   /* all */
 
   .menu-all-list {
