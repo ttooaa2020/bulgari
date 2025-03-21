@@ -26,13 +26,13 @@
 .visual .visual-text h2 {
   font-weight: 700;
 
-  font-size: var(--fz-3xl);
+  font-size: var(--second-banner-title);
 }
 
 .visual .visual-text p {
   font-weight: 400;
 
-  font-size: var(--fz-m);
+  font-size: var(--second-banner-text);
 }
 
 .visual figure img {

@@ -1,27 +1,4 @@
 @charset "utf-8";
-/* s.more */
-.more {
-  background: var(--second-color);
-  padding: 8rem 0;
-  margin: 0;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
-}
-
-.more-con {
-  display: flex;
-  align-items: center;
-  text-align: center;
-  flex-direction: column;
-}
-
-.more-title h4 {
-  font-weight: 700;
-  color: var(--darck-100);
-
-  font-size: var(--fz-xl);
-}
-
-/* e.more */
 
 /* about */
 
@@ -53,7 +30,7 @@
 .about-con li dl dt {
   font-weight: 800;
 
-  font-size: var(--fz-xl);
+  font-size: var(--text-title);
 }
 
 .about-con li dl dd {
@@ -61,7 +38,7 @@
   color: var(--darck-60);
   padding-top: 1%;
 
-  font-size: var(--fz-m);
+  font-size: var(--text);
 }
 
 .about-con li figure {

@@ -19,7 +19,7 @@
   font-weight: 600;
   cursor: pointer;
 
-  font-size: var(--fz-m);
+  font-size: var(--question-btn);
 }
 
 .lend-tabmenu button:hover {
@@ -40,14 +40,14 @@
   display: flex;
   flex-direction: column;
 
-  margin-top: var(--m-m);
+  margin-top: 3rem;
 }
 
 .question-list li {
   border-bottom: 1px solid #000;
   cursor: pointer;
 
-  padding: 2.3026% 0;
+  padding: 2% 0;
 }
 
 .question-list li:first-child {
@@ -61,7 +61,7 @@
 
   font-weight: 700;
 
-  font-size: var(--fz-l);
+  font-size: var(--question);
 }
 
 .question-list li strong::after {
@@ -81,9 +81,7 @@
   font-weight: 400;
   color: var(--darck-60);
 
-  padding-top: 0.8%;
-
-  font-size: var(--fz-s);
+  font-size: var(--answer);
 }
 
 .question-list li .answer-wrap p {
