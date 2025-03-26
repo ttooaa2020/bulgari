@@ -7,12 +7,12 @@
   grid-template-columns: repeat(4, 1fr);
   padding-top: 2.6316%;
 
-  gap: 3rem;
+  gap: var(--normal-gap);
 }
 
 .menu-all-list li {
   display: flex;
-  flex-direction: column;
+  text-align: center;
   justify-content: space-between;
   padding: 4rem;
 
@@ -35,15 +35,14 @@
 }
 
 .menu-all-list li a dt {
-  font-weight: 700;
-
-  font-size: var(--first-item-title);
+  font-weight: 500;
+  font-size: var(--font-m);
   color: var(--darck-100);
 }
 
 .menu-all-list li a dd {
-  font-weight: 400;
-  font-size: var(--first-item-text);
+  font-weight: 500;
+  font-size: var(--font-xs);
   color: var(--darck-60);
 }
 
@@ -59,7 +58,7 @@
 
 .menu-all-list li a strong {
   font-weight: 700;
-  font-size: var(--first-item-price);
+  font-size: var(--font-m);
 }
 
 /* 반응형  000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000*/
@@ -68,40 +67,36 @@
   .menu-all-list li {
     width: 29.4rem;
     width: 100%;
-
-    padding: 2.2rem 3.4rem;
   }
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1220px) {
   .menu-all-list {
-    gap: 2rem;
+    gap: var(--normal-gap);
   }
 
   .menu-all-list li {
     width: 18.5rem;
     width: 100%;
-
-    padding: 1.5rem 2.2rem;
   }
 
   .menu-all-list li a dl {
     padding-top: 0.2rem;
   }
-}
-
-@media screen and (max-width: 1024px) {
-  /* all */
 
   .menu-all-list {
     grid-template-columns: repeat(2, 1fr);
-    gap: 2rem;
+    gap: var(--normal-gap);
   }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 768px) {
   .menu-all-list {
     grid-template-columns: repeat(1, 1fr);
-    gap: 2rem;
+    gap: var(--normal-gap);
+  }
+
+  .event-list li {
+    flex: 1 1 100% !important;
   }
 }

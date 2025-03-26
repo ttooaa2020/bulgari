@@ -39,6 +39,7 @@ header.scrolled .join-btn .shop-bag {
 header.scrolled .join-btn .join {
   background: url(../img/join-darck.svg) no-repeat 50% / contain;
 }
+
 header.scrolled .mobile-more-btn {
   background: url(../img/more-icon-darck.svg) no-repeat 50% / contain;
 }
@@ -47,7 +48,6 @@ header.scrolled .language-list li a {
   display: block;
   padding: 2rem;
   text-align: center;
-  font-weight: 600;
 
   padding: 14.5985%;
 }
@@ -76,9 +76,8 @@ header.hide {
 
 .gnb li {
   padding: 0 3.1rem;
-  font-weight: 600;
-
-  font-size: var(--nav);
+  font-weight: 700;
+  font-size: 2.2rem;
 }
 
 .nav-btn {
@@ -88,30 +87,31 @@ header.hide {
 
   gap: 6.5789%;
 }
+
 .join-btn {
   display: flex;
   align-items: center;
-  gap: 4rem;
+  gap: 3.5rem;
 }
 
 .join-btn .shop-bag {
   display: block;
-  width: 2.5rem;
-  height: 3.5rem;
+  width: 2rem;
+  height: 3rem;
   background: url(../img/shop-bag.svg) no-repeat 100% / contain;
 }
 
 .join-btn .join {
   display: block;
-  width: 3rem;
-  height: 3rem;
+  width: 2.5rem;
+  height: 2.5rem;
   background: url(../img/join.svg) no-repeat 100% / contain;
 }
 
 .mobile-more-btn {
   display: none;
-  width: 4rem;
-  height: 4rem;
+  width: 3.5rem;
+  height: 3.5rem;
   background: url(../img/more-icon.svg) no-repeat 50% / contain;
 }
 

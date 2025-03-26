@@ -15,8 +15,8 @@
 }
 
 .foot-nav li {
-  font-weight: 700;
-  font-size: var(--foot-nav);
+  font-weight: 600;
+  font-size: var(--font-s);
   flex-shrink: 0;
 }
 
@@ -29,14 +29,14 @@
 .footer-con {
   display: flex;
 
-  padding-top: 1.5%;
+  padding-top: 1%;
   align-items: flex-start;
   justify-content: space-between;
   color: var(--darck-60);
 }
 
 address {
-  font-weight: 500;
+  font-weight: 400;
   font-size: var(--foot-address);
 }
 
@@ -49,12 +49,12 @@ address {
 .foot-icon {
   display: flex;
   flex-direction: column;
-  gap: 5rem;
+  gap: 3rem;
 }
 
 .foot-logo {
   display: block;
-  width: 30rem;
+  width: 25rem;
   height: 3.5rem;
   background: url(../img/logo-darck.svg) no-repeat 50% / contain;
 }
@@ -67,36 +67,36 @@ address {
 
 .link-icon .instagram {
   display: block;
-  width: 3rem;
-  height: 3rem;
+  width: var(--size-ico-sns);
+  height: var(--size-ico-sns);
 
   background: url(../img/instagram-icon.svg) no-repeat 50% / contain;
 }
 .link-icon .youtube {
   display: block;
-  width: 4rem;
-  height: 3rem;
+  width: var(--size-ico-sns);
+  height: var(--size-ico-sns);
 
   background: url(../img/youtube-icon.svg) no-repeat 50% / contain;
 }
 .link-icon .Facebook {
   display: block;
-  width: 3rem;
-  height: 3rem;
+  width: var(--size-ico-sns);
+  height: var(--size-ico-sns);
 
   background: url(../img/Facebook-icon.svg) no-repeat 50% / contain;
 }
 .link-icon .inline {
   display: block;
-  width: 3rem;
-  height: 3rem;
+  width: var(--size-ico-sns);
+  height: var(--size-ico-sns);
 
   background: url(../img/inline-icon.svg) no-repeat 50% / contain;
 }
 .link-icon .kakaotalk {
   display: block;
-  width: 3.5rem;
-  height: 3.5rem;
+  width: var(--size-ico-sns);
+  height: var(--size-ico-sns);
 
   background: url(../img/kakaotalk-icon.svg) no-repeat 50% / contain;
 }
@@ -119,7 +119,7 @@ address {
   }
 
   .foot-icon {
-    gap: 2rem;
+    gap: var(--normal-gap);
   }
 }
 
@@ -129,10 +129,19 @@ address {
     height: 5rem;
   }
 
+  .foot-nav {
+    margin-left: 0;
+    gap: var(--normal-gap);
+  }
+
+  .foot-nav li a {
+    padding: 0;
+  }
+
   .footer-con {
     display: flex;
     flex-direction: column;
-    gap: 2rem;
+    gap: var(--normal-gap);
   }
 
   .in {
@@ -146,7 +155,7 @@ address {
   }
 
   .foot-icon {
-    gap: 2rem;
+    gap: var(--normal-gap);
   }
 
   address {

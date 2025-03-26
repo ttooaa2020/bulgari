@@ -10,75 +10,21 @@
   --first-color: #00714f;
   --second-color: #f3f2f3;
 
-  /* 헤더 */
-  --nav: clamp(1.8rem, 1vw, 2rem);
-  /* 헤더 */
+  --font-3xl: 5rem;
+  --font-xxl: 4rem;
+  --font-xl: 3rem;
+  --font-l: 2.4rem;
+  --font-m: 2rem;
+  --font-s: 1.8rem;
+  --font-xs: 1.5rem;
 
-  /* 푸터 */
-  --foot-nav: clamp(1.6rem, 1vw, 2rem);
-  --foot-address: clamp(1.2rem, 0.9vw, 1.8rem);
-  /* 푸터 */
+  --margin-m: 3rem;
 
-  /*  메인 배너 */
-  /* --first-banner-title: 4rem;
-  --first-banner-text: 2rem; */
-  --first-banner-title: clamp(3.5rem, 2vw, 4rem);
-  --first-banner-text: clamp(1.5rem, 1vw, 2rem);
-  /*  메인 배너 */
+  --normal-gap: 2rem;
 
-  /*  서브 배너 */
-  --second-banner-title: 4rem;
-  --second-banner-text: clamp(1.5rem, 1vw, 2rem);
-  /*  서브 배너 */
+  --foot-address: 1.5rem;
 
-  /*  more */
-  --more-title: clamp(2rem, 1.5vw, 3rem);
-  /*  more */
-
-  /*  아이템 */
-  /*  서비스아이템 */
-  --service-item-title: 2.5rem;
-  --service-item-text: 2rem;
-  /*  서비스아이템 */
-
-  /*  제품아이템 */
-  --first-item-title: 2.4rem;
-  --first-item-text: 1.5rem;
-  --first-item-price: 2rem;
-  /*  제품아이템 */
-
-  /*  제품아이템2 */
-  --second-item-title: 2.4rem;
-  --second-item-text: 2rem;
-  /*  제품아이템2 */
-  /*  아이템 */
-
-  /*  text */
-  /* --text-title: 3.5rem;
-  --text: 2rem; */
-  --text-title: clamp(2.5rem, 1.8vw, 3.5rem);
-  --text: clamp(1.5rem, 1vw, 2rem);
-  /*  text */
-
-  /*  Q&A */
-  --question: clamp(2rem, 1.3vw, 2.5rem);
-  --answer: clamp(1.4rem, 0.9vw, 1.8rem);
-  --question-btn: 1.8rem;
-  /*  Q&A */
-
-  /*  버튼 */
-  --btn-margin-top: 3rem;
-  --btn-text: 2rem;
-  /*  버튼 */
-
-  /* 마진 */
-  --list-margin: 5rem;
-  /* 마진 */
-
-  /* 아이콘 사이즈 */
-  --top-icon-size: 4rem;
-  --bottom-icon-size: 3rem;
-  /* 아이콘 사이즈 */
+  --size-ico-sns: 2.5rem;
 }
 
 ::selection {
@@ -87,17 +33,18 @@
 }
 
 h3 {
-  font-weight: 800;
+  font-weight: 700;
   color: var(--darck-100);
   text-align: center;
 
-  font-size: clamp(3rem, 1.8vw, 3.5rem);
-  margin-bottom: 3rem;
+  font-size: 4rem;
+  /* font-size: clamp(3rem, 1.8vw, 4rem); */
+  margin-bottom: 4rem;
 }
 
 section {
   margin-bottom: 10rem;
-  margin-bottom: 5.2083%;
+  margin-bottom: 5%;
 }
 
 html {
@@ -163,30 +110,32 @@ img {
 
 .top {
   display: block;
-  width: 7.4rem;
-  height: 7.4rem;
+  width: 5rem;
+  height: 5rem;
   border-radius: 100%;
   background: var(--darck-100)
     url(https://www.handsome.co.kr/resources/pc/ext/images/ico-button-tooltop.png)
     no-repeat center/40%;
-  /* 
-  border: 0.5px solid #ffffff; */
+
+  border: 1px solid rgba(255, 255, 255, 0.5);
 }
 
 .more-btn {
-  width: 24rem;
-  height: 7.2rem;
-  background: var(--btn-color);
+  width: 14rem;
+  height: 6rem;
+  /* background: var(--btn-color); */
+
+  border: 1px solid var(--darck-100);
 
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 0.7rem;
-  margin-top: var(--btn-margin-top);
+  margin-top: var(--margin-m);
 
-  font-weight: 700;
-  font-size: var(--btn-text);
-  color: #fff;
+  font-weight: 400;
+  font-size: var(--font-s);
+  color: var(--darck-100);
 
   transition: 0.4s;
 }
@@ -194,6 +143,7 @@ img {
 .more-btn:hover {
   background: var(--first-color);
   color: #fff;
+  border: 1px solid transparent;
 }
 
 .event-list li figure {
@@ -211,6 +161,10 @@ img {
   .top {
     width: 5rem;
     height: 5rem;
+  }
+
+  section {
+    margin-bottom: 5rem;
   }
 }
 

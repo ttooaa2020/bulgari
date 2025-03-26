@@ -31,41 +31,35 @@
   top: 75%;
   left: 50%;
   transform: translate(-50%, -50%);
-  /* background: #5f5; */
+
   z-index: 1;
 }
 
 .main-visual-item .visual-con h2 {
-  font-weight: 700;
+  font-weight: 600;
   color: var(--light-100);
   white-space: nowrap;
-  font-size: var(--first-banner-title);
+  font-size: var(--font-3xl);
 }
 
 .main-visual-item .visual-con p {
   color: var(--light-100);
   font-weight: 400;
 
-  font-size: var(--first-banner-text);
+  font-size: var(--font-m);
 }
 
 .main-visual-item .visual-btn {
   display: block;
-  font-size: var(--btn-text);
-  margin-top: var(--btn-margin-top);
+  font-size: var(--font-m);
+  margin-top: var(--margin-m);
 
-  padding: 1rem 3rem;
-  border: 2px solid var(--light-100);
+  padding: 1.5rem 4rem;
+  background: var(--first-color);
   color: var(--light-100);
   font-weight: 600;
 
   transition: 0.4s;
-}
-
-.main-visual-item .visual-btn:hover {
-  background: var(--first-color);
-  border: 2px solid var(--first-color);
-  color: var(--light-100);
 }
 
 .main-visual-item::after {
@@ -75,9 +69,9 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(0, 0, 0, 0.6); /* 어두운 딤처리 */
-  opacity: 0.5; /* 투명도 조절 */
-  pointer-events: none; /* 클릭 이벤트를 막기 위해 */
+  background: rgba(0, 0, 0, 0.6);
+  opacity: 0.5;
+  pointer-events: none;
 }
 
 @media screen and (max-width: 1024px) {

@@ -5,12 +5,12 @@
 .about-con {
   display: flex;
   flex-wrap: wrap;
-
   gap: 10rem;
 }
 
 .about-con li {
   display: flex;
+  width: 100%;
   flex-wrap: wrap;
   align-items: center;
   overflow: hidden;
@@ -20,7 +20,6 @@
 
 .about-con li .about-text {
   flex: 1 1 max(40%, 300px);
-  /* border: 1px solid #000; */
 }
 
 .about-con li:nth-child(even) {
@@ -28,17 +27,16 @@
 }
 
 .about-con li dl dt {
-  font-weight: 800;
-
-  font-size: var(--text-title);
+  font-weight: 600;
+  font-size: var(--font-xl);
 }
 
 .about-con li dl dd {
   font-weight: 400;
   color: var(--darck-60);
-  padding-top: 1%;
+  padding-top: 0.5rem;
 
-  font-size: var(--text);
+  font-size: var(--font-m);
 }
 
 .about-con li figure {

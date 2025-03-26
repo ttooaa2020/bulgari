@@ -1,7 +1,7 @@
 /* s.more */
 .more {
   background: var(--second-color);
-  padding: 8rem 0;
+  padding: 10rem 0;
   margin: 0;
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
 }
@@ -17,7 +17,7 @@
   font-weight: 700;
   color: var(--darck-100);
 
-  font-size: var(--more-title);
+  font-size: var(--font-xl);
 }
 
 /* e.more */

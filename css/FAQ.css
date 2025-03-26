@@ -19,7 +19,7 @@
   font-weight: 600;
   cursor: pointer;
 
-  font-size: var(--question-btn);
+  font-size: var(--font-m);
 }
 
 .lend-tabmenu button:hover {
@@ -47,7 +47,7 @@
   border-bottom: 1px solid #000;
   cursor: pointer;
 
-  padding: 2% 0;
+  padding: 2rem 0;
 }
 
 .question-list li:first-child {
@@ -61,18 +61,16 @@
 
   font-weight: 700;
 
-  font-size: var(--question);
+  font-size: var(--font-l);
 }
 
 .question-list li strong::after {
   content: "";
   display: flex;
-  width: 1.5rem;
+  width: 4%;
   height: 1.5rem;
   background: url(../img/arrow.svg) no-repeat 50% / contain;
   transition: 0.4s;
-
-  width: 3.0172%;
 }
 
 .question-list li .answer-wrap {
@@ -80,12 +78,11 @@
 
   font-weight: 400;
   color: var(--darck-60);
-
-  font-size: var(--answer);
+  font-size: var(--font-m);
 }
 
 .question-list li .answer-wrap p {
-  padding-top: 1.5%;
+  padding-top: 1rem;
 }
 
 .question-list li.on > strong::after {
@@ -93,3 +90,9 @@
 }
 
 /* question  end*/
+
+@media screen and (max-width: 500px) {
+  .lend-tabmenu {
+    gap: 1.5rem;
+  }
+}
