@@ -72,11 +72,7 @@
 }
 
 .event-list li a .event-text {
-  padding-top: 2%;
-}
-
-.event-list li a .event-text {
-  padding-top: 2rem;
+  padding-top: 3%;
 }
 
 .event-list li a .event-text dt {
