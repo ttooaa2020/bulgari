@@ -12,8 +12,8 @@
 
 .menu-all-list li {
   padding: 3.5rem;
-
   background: var(--third-color);
+  transition: 0.4s;
 }
 
 .menu-all-list li a {
@@ -21,7 +21,6 @@
   align-items: center;
   flex-direction: column;
   text-align: center;
-  transition: 0.4s;
 }
 
 .menu-all-list li a figure {

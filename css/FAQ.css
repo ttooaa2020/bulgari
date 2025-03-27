@@ -67,7 +67,7 @@
 .question-list li strong::after {
   content: "";
   display: flex;
-  width: 4%;
+  width: 5%;
   height: 1.5rem;
   background: url(../img/arrow.svg) no-repeat 50% / contain;
   transition: 0.4s;
@@ -91,8 +91,16 @@
 
 /* question  end*/
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 768px) {
   .lend-tabmenu {
     gap: 1.5rem;
+  }
+
+  .question-list li strong {
+    font-size: var(--font-m);
+  }
+
+  .question-list li .answer-wrap {
+    font-size: var(--font-s);
   }
 }

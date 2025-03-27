@@ -63,4 +63,12 @@
   .about-con li figure {
     height: 28rem;
   }
+
+  .about-con li dl dt {
+    font-size: var(--font-m);
+  }
+
+  .about-con li dl dd {
+    font-size: var(--font-xs);
+  }
 }

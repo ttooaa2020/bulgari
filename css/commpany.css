@@ -102,6 +102,14 @@
   .company-text p {
     font-size: var(--font-xs);
   }
+
+  .event-list li a .event-text dt {
+    font-size: var(--font-xs);
+  }
+
+  .event-list li a .event-text dd {
+    font-size: var(--font-s);
+  }
 }
 
 @media screen and (max-width: 768px) {

@@ -18,12 +18,11 @@
   --font-m: 2rem;
   --font-s: 1.8rem;
   --font-xs: 1.5rem;
+  --font-xxs: 1.3rem;
 
   --margin-m: 3rem;
 
   --normal-gap: 2rem;
-
-  --foot-address: 1.5rem;
 
   --size-ico-sns: 2.5rem;
 }
@@ -34,17 +33,17 @@
 }
 
 h3 {
+  font-size: var(--font-xl);
   font-weight: 700;
   color: var(--darck-100);
   text-align: center;
 
-  font-size: 4rem;
-  margin-bottom: 4rem;
+  margin-bottom: 2rem;
 }
 
 section {
   margin-bottom: 10rem;
-  margin-bottom: 5%;
+  /* margin-bottom: 5%; */
 }
 
 html {
@@ -79,6 +78,7 @@ img {
   max-width: 100%;
   height: 100%;
   object-fit: cover;
+  pointer-events: none;
 }
 
 .hidden {
@@ -159,12 +159,12 @@ img {
 
 @media screen and (max-width: 1024px) {
   h3 {
-    font-size: 3.2rem;
+    font-size: var(--font-l);
     margin-bottom: 2rem;
   }
 
   section {
-    margin-bottom: 5rem;
+    margin-bottom: 6rem;
   }
 
   .inner {
