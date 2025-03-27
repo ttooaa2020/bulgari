@@ -24,8 +24,6 @@
 .event-list li figure {
   width: 100%;
   height: 50rem;
-
-  /* border: 1px solid rgba(0, 0, 0, 0.2); */
 }
 
 .event-list li img {
@@ -38,27 +36,30 @@
 }
 
 .event-list li .event-text dt {
-  font-size: 2.5rem;
+  font-size: var(--font-l);
   font-weight: 600;
   color: var(--darck-100);
 }
 
 .event-list li .event-text dd {
-  font-size: 2rem;
+  font-size: var(--font-m);
   font-weight: 400;
   color: var(--darck-60);
 }
 
 /* 반응형  000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000*/
-@media (max-width: 1440px) {
-  .event-list li figure {
-    height: 40rem;
-  }
-}
 
 @media (max-width: 1024px) {
   .event-list li figure {
     height: 30rem;
+  }
+
+  .event-list li .event-text dt {
+    font-size: 2rem;
+  }
+
+  .event-list li .event-text dd {
+    font-size: 1.4rem;
   }
 }
 

@@ -9,6 +9,7 @@
 
   --first-color: #00714f;
   --second-color: #f3f2f3;
+  --third-color: #f3f0eb;
 
   --font-3xl: 5rem;
   --font-xxl: 4rem;
@@ -38,7 +39,6 @@ h3 {
   text-align: center;
 
   font-size: 4rem;
-  /* font-size: clamp(3rem, 1.8vw, 4rem); */
   margin-bottom: 4rem;
 }
 
@@ -57,6 +57,8 @@ body {
   font: 2rem/1.5 Pretendard, sans-serif;
   color: var(--darck-100);
   word-break: keep-all;
+  max-width: 1920px;
+  margin: 0 auto;
 
   background: var(--light-100);
 }
@@ -123,9 +125,6 @@ img {
 .more-btn {
   width: 14rem;
   height: 6rem;
-  /* background: var(--btn-color); */
-
-  border: 1px solid var(--darck-100);
 
   display: flex;
   align-items: center;
@@ -135,7 +134,8 @@ img {
 
   font-weight: 400;
   font-size: var(--font-s);
-  color: var(--darck-100);
+  color: var(--light-100);
+  background: var(--first-color);
 
   transition: 0.4s;
 }
@@ -158,23 +158,28 @@ img {
 /* 반응형00000000000000000000000000000000000000000000000000000000000000000000000000 */
 
 @media screen and (max-width: 1024px) {
-  .top {
-    width: 5rem;
-    height: 5rem;
+  h3 {
+    font-size: 3.2rem;
+    margin-bottom: 2rem;
   }
 
   section {
     margin-bottom: 5rem;
   }
-}
 
-@media (max-width: 500px) {
   .inner {
     width: 90%;
+  }
+
+  .top {
+    width: 5rem;
+    height: 5rem;
   }
 
   .more-btn {
     width: 17.5rem;
     height: 5.1rem;
+
+    font-size: var(--font-xs);
   }
 }

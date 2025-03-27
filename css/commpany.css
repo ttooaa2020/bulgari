@@ -6,8 +6,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-
-  gap: 5%;
+  gap: 5rem;
 }
 
 .company .brand-story figure {
@@ -22,8 +21,7 @@
 }
 
 .company .brand-story .content {
-  width: 58rem;
-  width: 40%;
+  width: 45%;
 }
 
 .company-text strong {
@@ -35,7 +33,7 @@
 
 .company-text p {
   font-weight: 400;
-  font-size: var(--font-m);
+  font-size: var(--font-s);
   color: var(--darck-60);
   padding-top: 0.5rem;
 }
@@ -45,9 +43,8 @@
 /* s.event */
 
 .event-list {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
   gap: var(--normal-gap);
 
   padding-top: 2rem;
@@ -96,21 +93,26 @@
 /* e.event */
 
 /* 반응형  000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000*/
-
 @media screen and (max-width: 1024px) {
-  .event-list li {
-    flex: 1 1 40%;
+  .company-text strong {
+    font-weight: 700;
+    font-size: var(--font-l);
+  }
+
+  .company-text p {
+    font-size: var(--font-xs);
   }
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 768px) {
   /* company */
   .company .brand-story {
     display: flex;
-
     flex-direction: column;
     align-items: center;
     position: relative;
+
+    gap: 0;
   }
 
   .company .brand-story .content .more-btn {
@@ -121,9 +123,6 @@
 
     gap: 1.5rem;
     z-index: 1;
-
-    color: var(--light-100);
-    border: 2px solid var(--light-100);
   }
 
   .company .brand-story .content .company-text {
@@ -149,6 +148,7 @@
   }
 
   .event-list {
+    grid-template-columns: repeat(2, 1fr);
     padding-top: 2rem;
     gap: 1rem;
   }
