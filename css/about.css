@@ -65,10 +65,10 @@
   }
 
   .about-con li dl dt {
-    font-size: var(--font-m);
+    font-size: var(--font-l);
   }
 
   .about-con li dl dd {
-    font-size: var(--font-xs);
+    font-size: var(--font-s);
   }
 }

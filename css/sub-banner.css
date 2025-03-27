@@ -32,7 +32,7 @@
 .visual .visual-text p {
   font-weight: 400;
 
-  font-size: var(--font-m);
+  font-size: var(--font-l);
 }
 
 .visual figure img {
